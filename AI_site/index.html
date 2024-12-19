@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Impostazioni del carattere e della viewport per il supporto responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titolo della pagina visualizzato nella scheda del browser -->
+    <title>Quiz Game</title>
+    
+    <!-- Link al framework Bootstrap per stilizzare facilmente la pagina -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Link al file CSS personalizzato per gli stili aggiuntivi -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Contenitore principale centrato verticalmente e orizzontalmente sulla pagina -->
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        
+        <!-- Sezione del contenuto con uno sfondo, padding e bordo arrotondato -->
+        <div class="text-center bg-body p-5 rounded shadow">
+            
+            <!-- Titolo della pagina che saluta l'utente -->
+            <h1 class="mb-4 text-black">Benvenuto nel Quiz Game!</h1>
+            
+            <!-- Contenitore con disposizione verticale dei bottoni e dei campi di input -->
+            <div class="d-flex flex-column">
+                
+                <!-- Pulsante per creare un nuovo quiz, reindirizza a 'creazione.html' -->
+                <button 
+                    id="createQuiz" 
+                    class="btn btn-success mb-3"
+                    onclick="window.location.href='creazione.html'">
+                    Crea un nuovo quiz
+                </button>
+
+                <!-- Pulsante per iniziare il quiz, invoca la funzione 'startQuiz()' al click -->
+                <button 
+                    id="startQuiz" 
+                    class="btn btn-primary mb-3"
+                    onclick="startQuiz()">
+                    Inizia il quiz
+                </button>
+
+                <!-- Campo di input per l'inserimento del nome dell'utente -->
+                <div class="mb-3">
+                    <label for="userName" class="form-label text-black">Nome</label>
+                    <input 
+                        type="text" 
+                        class="form-control custom-input" 
+                        id="userName" 
+                        placeholder="Inserisci nome">
+                </div>
+
+                <!-- Campo di input per l'inserimento della classe dell'utente -->
+                <div class="mb-3">
+                    <label for="class" class="form-label text-black">Classe</label>
+                    <input 
+                        type="text" 
+                        class="form-control custom-input" 
+                        id="class" 
+                        placeholder="Inserisci classe">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer della pagina con il testo di copyright e la nota del sito -->
+    <footer class="footer py-3">
+        <div class="container text-center">
+            <!-- Testo generico sul creatore del sito -->
+            <p class="text-white">Site created with ChatGPT</p>
+            
+            <!-- Copyright e il nome del creatore -->
+            <p class="text-muted">Made by Moise Roland-Class 5E &copy; 2024</p>
+        </div>
+    </footer>
+
+    <!-- Collegamento al file JavaScript che gestisce la logica interattiva -->
+    <script src="js/script.js"></script>
+</body>
+</html>

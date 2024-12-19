@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- Definisce il set di caratteri e la responsività per la visualizzazione su diversi dispositivi -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titolo della pagina che appare nella scheda del browser -->
+    <title>Domande a Scelta Multipla</title>
+    
+    <!-- Link al CSS di Bootstrap per la stilizzazione della pagina -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Link al CSS personalizzato per aggiungere stili personalizzati alla pagina -->
+    <link rel="stylesheet" href="css/domande.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        
+        <!-- Sezione per visualizzare il timer con il tempo rimanente -->
+        <div id="timer" class="mb-4 text-white">
+            Tempo rimanente:
+        </div>
+        
+        <!-- Titolo principale della pagina con un margine inferiore -->
+        <h1 class="text-center mb-4">Domande a Scelta Multipla</h1>
+        
+        <!-- Contenitore dove saranno inserite le domande a scelta multipla dinamicamente -->
+        <div id="choiceQuestionsContainer">
+            <!-- Le domande a scelta multipla saranno inserite qui tramite JavaScript -->
+        </div>
+
+        <!-- Sezione per i pulsanti di invio risposte e ritorno alla homepage -->
+        <div class="d-flex justify-content-between">
+            <!-- Pulsante per inviare le risposte -->
+            <button id="submitChoiceAnswers" class="btn btn-success mt-4">Invia Risposte</button>
+            
+            <!-- Pulsante per tornare alla homepage -->
+            <button id="returnHome" class="btn btn-danger mt-4" onclick="window.location.href='index.html'">
+                Ritorna al Homepage
+            </button>
+        </div>
+    </div>
+
+    <!-- Collegamento al file JavaScript che gestisce le domande a scelta multipla -->
+    <script src="js/chiuse.js"></script>
+</body>
+
+</html>

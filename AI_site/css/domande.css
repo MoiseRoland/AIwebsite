@@ -1,0 +1,127 @@
+/* Corpo della pagina */
+body {
+    background-color: #2C3E50; /* Colore di sfondo più scuro */
+    color: white; /* Testo predefinito bianco */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Personalizzazione dei pulsanti */
+.btn-success {
+    background-color: #4CAF50; /* verde */
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #45a049; /* verde più scuro al passaggio del mouse */
+}
+
+.btn-primary {
+    background-color: #008CBA; /* blu */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #007BB5; /* blu più scuro al passaggio del mouse */
+}
+
+/* Stile del titolo */
+.text-black {
+    color: black !important; /* Forza il colore nero */
+}
+
+/* Stile del contenitore (bg-body) */
+.bg-body {
+    background-color: #2C3E50; /* Stesso colore dello sfondo del body */
+}
+
+/* Personalizzazione della casella di input */
+.custom-input {
+    background-color: #34495E; /* Colore di sfondo più scuro */
+    color: white; /* Testo bianco */
+    border: 1px solid #5D6D7E; /* Bordo grigio chiaro */
+    border-radius: 5px; /* Angoli arrotondati */
+    padding: 10px; /* Spaziatura interna */
+}
+
+.custom-input::placeholder {
+    color: #aaa; /* Colore del testo del placeholder */
+    font-style: italic; /* Testo in corsivo per il placeholder */
+}
+
+.custom-input:focus {
+    border-color: #4CAF50; /* Colore del bordo quando è selezionato */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Ombra verde chiaro */
+    outline: none; /* Rimuove il bordo predefinito */
+}
+
+/* Stile delle domande e risposte */
+.question {
+    background-color: #34495E;
+    border: 1px solid #5D6D7E;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+/* Modifica al campo di risposta delle domande aperte */
+.answer {
+    background-color: #34495E; /* Colore di sfondo più scuro */
+    color: white; /* Testo bianco */
+    border: 1px solid #5D6D7E; /* Bordo grigio chiaro */
+    border-radius: 5px; /* Angoli arrotondati */
+    padding: 10px; /* Spaziatura interna */
+    width: 100%; /* Rende il campo largo come il container */
+    height: 150px; /* Aumenta l'altezza per permettere più testo */
+    resize: vertical; /* Permette all'utente di ridimensionare la finestra verticalmente */
+    word-wrap: break-word; /* Fa andare a capo automaticamente quando una parola è troppo lunga */
+    overflow-wrap: break-word; /* Assicura che anche le parole troppo lunghe si spezzano se necessario */
+}
+
+.answer::placeholder {
+    color: #aaa; /* Colore del testo del placeholder */
+    font-style: italic; /* Testo in corsivo per il placeholder */
+}
+
+.answer:focus {
+    border-color: #4CAF50; /* Colore del bordo quando è selezionato */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Ombra verde chiaro */
+    outline: none; /* Rimuove il bordo predefinito */
+}
+
+/* Stile per il pulsante rosso */
+.btn-danger {
+    background-color: #E74C3C; /* Colore rosso */
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #C0392B; /* Colore rosso più scuro quando il mouse ci passa sopra */
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.85); /* Footer con un nero non completamente opaco */
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Testo grigio per il copyright */
+.text-muted {
+    color: #aaa !important;
+}
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #E74C3C; /* Rosso per il timer */
+    padding: 10px;
+    border-radius: 5px;
+}

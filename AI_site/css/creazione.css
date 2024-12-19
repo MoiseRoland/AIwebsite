@@ -1,0 +1,81 @@
+/* Corpo della pagina */
+body {
+    background-color: #2C3E50; /* Sfondo scuro */
+    color: white; /* Testo predefinito bianco */
+    font-family: Arial, sans-serif;
+}
+
+/* Colore degli header */
+h1, h4 {
+    color: white; /* Testo bianco */
+}
+/* Colore specifico per il titolo della pagina */
+h1 {
+    color: white !important; /* Forziamo il colore bianco */
+}
+
+/* Specifico per il titolo della pagina "Creazione Quiz" */
+.container h1 {
+    color: white !important; /* Forziamo il colore bianco */
+}
+
+/* Stile del contenitore principale */
+.container {
+    background-color: #34495E; /* Sfondo leggermente più scuro */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Stile per il selettore */
+.form-select {
+    background-color: #2C3E50; /* Sfondo nero */
+    color: white; /* Testo bianco */
+    border: 1px solid white; /* Bordo bianco */
+}
+
+.form-select:focus {
+    border-color: #45a049; /* Bordo verde al focus */
+    box-shadow: 0 0 5px #45a049;
+}
+
+/* Pulsanti */
+.btn-primary {
+    background-color: #008CBA;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #007BB5;
+}
+
+/* Testo nei form */
+.form-label, .form-control {
+    color: white;
+}
+
+/* Input box */
+.form-control {
+    background-color: #2C3E50; /* Sfondo nero */
+    border: 1px solid white; /* Bordo bianco */
+    color:white;
+}
+textarea.answer {
+    color: white; /* Testo bianco */
+    background-color: #34495E; /* Sfondo scuro per la risposta */
+}
+/* Modifica il colore dei placeholder nei campi di input */
+.form-control::placeholder {
+    color: #ffffff; /* Colore bianco per il testo del placeholder */
+    font-style: italic; /* Facoltativo: rende il testo in corsivo */
+}
+
+/* Modifica anche il testo all'interno delle caselle di testo per le domande */
+textarea.answer::placeholder {
+    color: #ffffff; /* Colore bianco per il placeholder */
+}
+
+
+.form-control:focus {
+    border-color: #45a049; /* Bordo verde al focus */
+    box-shadow: 0 0 5px #45a049;
+}
